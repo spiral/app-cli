@@ -1,6 +1,6 @@
 {
   "name": "spiral/app-cli",
-  "description": "Spiral Skeleton Application",
+  "description": "Spiral Skeleton Console Application",
   "license": "MIT",
   "authors": [
     {
