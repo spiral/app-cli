@@ -28,6 +28,9 @@ class App extends Kernel
         Bootloader\DebugBootloader::class,
         Bootloader\SnapshotsBootloader::class,
 
+        // Security
+        Bootloader\Security\EncrypterBootloader::class,
+
         // Databases
         Bootloader\Database\DatabaseBootloader::class,
         Bootloader\Database\MigrationsBootloader::class,
