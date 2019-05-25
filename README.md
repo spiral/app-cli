@@ -39,7 +39,7 @@ $ php ./app.php configure
 To start console application:
 
 ```
-$ php ./app.php welcome
+$ php ./app.php
 ```
 
 License:
