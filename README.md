@@ -25,8 +25,6 @@ Installation
 composer create-project spiral/app-cli
 ```
 
-> Application server will be downloaded automatically.
-
 Once application is installed you can ensure that it was configured properly by executing:
 
 ```
