@@ -13,13 +13,10 @@
     "spiral/framework": "^2.0",
     "spiral/logger": "^1.1",
     "spiral/debug": "^1.3",
-    "spiral/console": "^1.2",
-    "spiral/dotenv-bridge": "^1.0"
+    "spiral/console": "^1.2"
   },
   "scripts": {
     "post-create-project-cmd": [
-      "php -r \"copy('.env.sample', '.env');\"",
-      "php app.php encrypt:key -m .env",
       "php app.php configure -vv"
     ]
   },
