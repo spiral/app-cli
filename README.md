@@ -18,7 +18,6 @@ Application Bundle
 --------
 Application bundle includes following components:
 * Console commands via symfony/console (auto-discovery)
-* .env support
 
 Installation
 --------
