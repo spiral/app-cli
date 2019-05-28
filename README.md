@@ -13,14 +13,12 @@ Server Requirements
 Make sure that your server is configured with following PHP version and extensions:
 * PHP 7.1+
 * MbString Extension
-* PDO Extension with desired database drivers
 
 Application Bundle
 --------
 Application bundle includes following components:
-* Console commands via symfony/console
-* DBAL and migrations support
-* [Cycle DataMapper ORM](https://github.com/cycle)
+* Console commands via symfony/console (auto-discovery)
+* .env support
 
 Installation
 --------

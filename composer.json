@@ -13,15 +13,7 @@
     "spiral/framework": "^2.0",
     "spiral/logger": "^1.1",
     "spiral/debug": "^1.3",
-    "spiral/snapshots": "^1.0",
     "spiral/console": "^1.2",
-    "spiral/encrypter": "^1.1",
-    "spiral/database": "^2.3",
-    "spiral/migrations": "^2.0",
-    "cycle/orm": "^1.0",
-    "cycle/annotated": "^1.0",
-    "cycle/migrations": "^1.0",
-    "spiral/monolog-bridge": "^1.0",
     "spiral/dotenv-bridge": "^1.0"
   },
   "scripts": {

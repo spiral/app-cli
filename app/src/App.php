@@ -12,7 +12,6 @@ namespace App;
 use Spiral\Bootloader;
 use Spiral\DotEnv\Bootloader as DotEnv;
 use Spiral\Framework\Kernel;
-use Spiral\Monolog\Bootloader as Monolog;
 
 class App extends Kernel
 {
@@ -23,25 +22,7 @@ class App extends Kernel
     protected const LOAD = [
         // Environment configuration
         DotEnv\DotenvBootloader::class,
-
-        // Core Services
         Bootloader\DebugBootloader::class,
-        Bootloader\SnapshotsBootloader::class,
-
-        // Security
-        Bootloader\Security\EncrypterBootloader::class,
-
-        // Databases
-        Bootloader\Database\DatabaseBootloader::class,
-        Bootloader\Database\MigrationsBootloader::class,
-
-        // ORM
-        Bootloader\Cycle\CycleBootloader::class,
-
-        // Extensions and bridges
-        Monolog\MonologBootloader::class,
-
-        // Framework commands
         Bootloader\CommandBootloader::class
     ];
 
