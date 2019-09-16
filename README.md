@@ -12,12 +12,12 @@ Server Requirements
 --------
 Make sure that your server is configured with following PHP version and extensions:
 * PHP 7.2+, 64bit
-* **mb-string** extension
+* *mb-string* extension
 
 Application Bundle
 --------
-Application bundle includes following components:
-* Console commands via symfony/console (auto-discovery)
+Application bundle includes the following components:
+* Console commands via Symfony/Console (auto-discovery)
 
 Installation
 --------
@@ -25,7 +25,7 @@ Installation
 composer create-project spiral/app-cli
 ```
 
-Once application is installed you can ensure that it was configured properly by executing:
+Once the application is installed you can ensure that it was configured properly by executing:
 
 ```
 $ php ./app.php configure
