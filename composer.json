@@ -1,26 +1,41 @@
 {
-  "name": "spiral/app-cli",
-  "description": "Spiral Skeleton Console Application",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Wolfy-J",
-      "email": "wolfy.jd@gmail.com"
-    }
-  ],
-  "require": {
-    "php": ">=7.2",
-    "spiral/framework": "^2.0",
-    "spiral/console": "^1.2"
-  },
-  "scripts": {
-    "post-create-project-cmd": [
-      "php app.php configure -vv"
-    ]
-  },
-  "autoload": {
-    "psr-4": {
-      "App\\": "app/src/"
-    }
-  }
+    "name": "spiral/app-cli",
+    "type": "project",
+    "license": "MIT",
+    "description": "Spiral Skeleton Console Application",
+    "homepage": "https://spiral.dev",
+    "support": {
+        "issues": "https://github.com/spiral/app-cli/issues",
+        "source": "https://github.com/spiral/app-cli"
+    },
+    "authors": [
+        {
+            "name": "Wolfy-J",
+            "email": "wolfy.jd@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "spiral/framework": "^2.6"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php app.php configure -vv"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.2.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

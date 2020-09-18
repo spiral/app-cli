@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Spiral Framework.
+ * This file is part of Spiral package.
  *
- * @license   MIT
- * @author    Anton Titov (Wolfy-J)
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 declare(strict_types=1);
@@ -19,19 +19,19 @@ use Symfony\Component\Console\Input\InputArgument;
  */
 class WelcomeCommand extends Command
 {
-    protected const NAME        = "welcome";
-    protected const DESCRIPTION = "Welcome command";
+    protected const NAME        = 'welcome';
+    protected const DESCRIPTION = 'Welcome command';
     protected const ARGUMENTS   = [
-        ['name', InputArgument::OPTIONAL, 'Name', 'User']
+        ['name', InputArgument::OPTIONAL, 'Name', 'User'],
     ];
 
     /**
      * This method supports argument injection.
      */
-    public function perform()
+    public function perform(): void
     {
         $this->sprintf(
-            "Welcome, <fg=green>%s</fg=green>!",
+            'Welcome, <fg=green>%s</fg=green>!',
             $this->argument('name')
         );
     }
