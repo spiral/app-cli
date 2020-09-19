@@ -21,6 +21,6 @@ class App extends Kernel
      * within system container on application start.
      */
     protected const LOAD = [
-        Framework\CommandBootloader::class
+        Framework\CommandBootloader::class,
     ];
 }
