@@ -15,8 +15,8 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
-        "spiral/framework": "^2.13"
+        "php": ">=8.0",
+        "spiral/framework": "^3.0"
     },
     "scripts": {
         "post-create-project-cmd": [
