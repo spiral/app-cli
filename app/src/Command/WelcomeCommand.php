@@ -28,11 +28,13 @@ class WelcomeCommand extends Command
     /**
      * This method supports argument injection.
      */
-    public function perform(): void
+    public function perform(): int
     {
         $this->sprintf(
             'Welcome, <fg=green>%s</fg=green>!',
             $this->argument('name')
         );
+
+        return self::SUCCESS;
     }
 }
