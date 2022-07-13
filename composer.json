@@ -15,8 +15,8 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
-        "spiral/framework": "^2.8"
+        "php": ">=7.4",
+        "spiral/framework": "^2.13"
     },
     "scripts": {
         "post-create-project-cmd": [
@@ -34,7 +34,10 @@
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "spiral/composer-publish-plugin": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
